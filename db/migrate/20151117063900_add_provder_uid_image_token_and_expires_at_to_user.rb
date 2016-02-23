@@ -1,0 +1,9 @@
+class AddProvderUidImageTokenAndExpiresAtToUser < ActiveRecord::Migration
+  def change
+    add_column :users, :provder, :string
+    add_column :users, :uid, :string
+    add_column :users, :image, :string
+    add_column :users, :token, :string
+    add_column :users, :expires_at, :datetime
+  end
+end
